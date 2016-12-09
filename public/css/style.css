@@ -1,0 +1,147 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:"Comic Sans MS", cursive, sans-serif;
+   user-select: none;
+}
+
+.container{
+
+  width:50%;
+  margin-left:25%;
+  margin-right:25%;
+  font-size:25px;
+overflow:hidden;
+word-wrap:break-word;
+
+
+}
+.clear{
+  width:20%;
+background:#FF8C94;
+border-radius:5px;
+height:50px;
+margin-top:20px;
+}
+.clear:hover{
+  cursor:pointer;
+}
+h1{
+background:#DEE7FF;
+}
+.filter{
+  float:left;
+width:100%;
+  background:black;
+  color:white;
+  padding-top:14px;
+  padding-bottom:14px;
+}
+.filter:hover{
+  cursor:pointer;
+
+}
+.filter > input[type="checkbox"]{
+  margin-left:30px;
+  height:30px;
+  width:30px;
+  float:left;
+}
+.item{
+  padding-top:10px;
+  padding-bottom:10px;
+  background:#DEE7FF;
+  width:100%;
+  float:left;
+    word-wrap:break-word;
+}
+
+.item:nth-child(odd) {
+    background:#BFD1FF;
+}
+
+.item > a{
+  float:left;
+  width:75%;
+  height:100%;
+  word-wrap:break-word;
+}
+.filter > a{
+margin-left:30px;
+}
+.item:hover{
+  cursor:pointer;
+}
+
+.item > input[type="checkbox"]{
+  float:left;
+
+  height:30px;
+  width:12%;
+
+}
+
+[type="checkbox"]:hover{
+  cursor:pointer;
+}
+.title{
+  text-align:center;
+}
+.button{
+  width:100%;
+  float:left;
+  padding-top:4px;
+  padding-bottom:4px;
+  font-weight:bold;
+  font-size:23px;
+}
+.button:hover{
+  cursor:pointer;
+  background:silver;
+}
+input[type="text"]{
+  float:left;
+  width:93%;
+  height:28px;
+  font-size:22px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left:30px;
+  word-wrap:break-word;
+
+}
+
+@media screen and (max-width: 780px) {
+    .container {
+        width:90%;
+        margin-left:5%;
+        margin-right:5%;
+        font-size:20px;
+    }
+    .item > input[type="checkbox"]{
+      float:left;
+      margin-left:20px;
+
+      height:25px;
+      width:25px;
+    }
+    .filter > input[type="checkbox"]{
+      float:left;
+      margin-left:20px;
+
+      height:25px;
+      width:25px;
+
+    }
+    .item > a{
+      float:left;
+      margin-left:60px;
+      height:100%;
+    }
+    input[type="text"]{
+
+      width:91%;
+
+
+    }
+}
